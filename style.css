@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right top, #fccfcc, #f7c2cd, #edb8d3, #dab0db, #bdabe3, #aaa3dd, #969cd7, #8195d0, #7c88be, #767bad, #6f6e9c, #67628b);
+  color: #1f1f1f;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  background-color: #edd4ac;
+}
+
+.info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  background-image: url(../img/hd-wallpaper-201496.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+.job {
+  margin-bottom: 4rem;
+}
+
+.info p {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.content {
+  background-color: #ededed;
+  padding: 3rem;
+  height: 100%;
+  overflow: scroll;
+}
+
+#contact {
+  display: none;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+nav a {
+  margin: 0 2rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #1f1f1f;
+  border-bottom: 2px solid #cacaca;
+  padding-bottom: 1rem;
+  width: 100px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 1.5rem;
+}
+
+.name {
+  width: 100%;
+}
+
+.name, .personal-infos {
+  padding-left: 4rem;
+}
+
+.personal-infos {
+  padding-bottom: 4rem;
+}
+
+.info p a, .contact-info a {
+  text-decoration: none;
+  color: #0db8b8;
+}
+
+.box {
+  border: 1px solid #1f1f1f;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+/* tablet hochkant und smartphone quer */
+@media screen and (min-width:700px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    width: 90%;
+    height: 90%;
+    box-shadow: 5px 5px 30px 5px #555555;
+    background-color: #ededed;
+  }
+  .info {
+    width: 100%;
+    height: 30%;
+    background-color: #edd4ac;
+    flex-direction: row;
+    padding: 0;
+  }
+  .content {
+    height: 70%;
+    padding: 3rem 6rem;
+    overflow: scroll;
+  }
+  .personal-infos {
+    display: none;
+  }
+  .image {
+    width: 70%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: 4rem;
+    border-radius: 0;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  #contact {
+    display: inline;
+  }
+  .projects-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .box {
+    height: 200px;
+    margin-bottom: 0;
+  }
+}
+
+/* tablet quer */
+@media screen and (min-width:1100px) {
+  section {
+    display: flex;
+  }
+  #contact {
+    display: none;
+  }
+  .personal-infos {
+    display: inline-block;
+  }
+  .info {
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .content {
+    width: 70%;
+    height: 100%;
+  }
+  .image {
+    margin-right: 0;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 300px;
+  }
+  .name, .personal-infos {
+    padding-left: 3rem;
+  }
+  nav a {
+    font-size: 1.6rem;
+  }
+}
+
+/* desktop */
+@media screen and (min-width:1300px) {
+  section {
+    width: 70%;
+    height: 70%;
+  }
+}
